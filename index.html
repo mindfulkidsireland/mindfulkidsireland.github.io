@@ -4,7 +4,8 @@
         <title>Mindful Kids Ireland</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
-
+        <link rel="icon" type="image/png" href="./img/favicon.png">
+        
         <link href="css/index.css" rel="stylesheet" type="text/css"/>
         <script src="js/index.js" type="text/javascript"></script>
 
@@ -16,27 +17,31 @@
         
         <div id="dim-window" onclick="hideShopMessage()"></div>
         
+        <!-- Header -->
         <div id="header" class="noselect">
 
             <div id="header-image"></div>
 
-            <div id="logo"></div>
+            <a href="." onclick="window.open('.','_self')"><div id="logo"></div></a>
 
             <ul id="tabs">
-                <li class="tab tab-active" onclick="showPage('home')">Home</li>
-                <li class="tab" onclick="showPage('contact')">Contact</li>
-                <li class="tab" onclick="showPage('faq')">FAQ</li>
-                <li class="tab" onclick="showPage('pawsb')">Paws.b</li>
+                <li class="tab tab-active" onclick="showPage('home')"><a href=".">Home</a></li>
+                <li class="tab" onclick="showPage('contact')"><a href="contact">Contact</a></li>
+                <li class="tab" onclick="showPage('faq')"><a href="faq">FAQ</a></li>
+                <li class="tab" onclick="showPage('pawsb')"><a href="pawsb">Paws.b</a></li>
+                <li class="tab" onclick="showPage('evidence')"><a href="evidence">Evidence</a></li>
                 <li class="tab" onclick="showPage('shop')">Shop</li>
             </ul>
 
             <div id="shop-message">
                 <div id="close-shop-message-icon" onclick="hideShopMessage()"></div>
-                <h1>Shop Closed</h1>
-                <p>The shop is currently closed. Check back soon!</p>
+                <h1>Try again soon!</h1>
+                <p>The shop is currently closed.</p>
             </div>
+            
         </div>
 
+        <!-- Home -->
         <div id="home" class="container">
             <h1>About Mindfulness</h1>
             <p><b>Mindfulness</b> is achieved by focusing one’s awareness on the <b>present moment</b>, not dwelling on past events or dreaming of the future, but <b>being in the ‘now’</b>.  It has been proven to <b>decrease levels of anxiety</b>, <b>social conflict</b> & <b>attention disorder</b> among children. It can help both <b>adults and children</b> become more <b>responsive</b> & <b>less reactive</b>, more <b>focused</b> & <b>less distracted</b>, more <b>calm</b> & <b>less stressed</b> creating a more <b>positive</b> human being. It is an easy concept, but quite difficult to master and requires lots of practice through formal and informal <b>meditations</b>.</p>
@@ -48,10 +53,10 @@
                 is a trained <b>Montessori teacher</b> and ran her own pre-school and 
                 after-school for many years. She also holds a <b>Level 6 Diploma</b> 
                 in childcare, is a qualified childcare tutor, and a trained 
-                '<a onclick="showPage('pawsb')">Paws.b</a>' Mindfulness Teacher. Julieanne trained in '<a onclick="showPage('pawsb')">Paws.b</a>' in 
+                <a onclick="showPage('pawsb')">Paws.b</a> Mindfulness Teacher. Julieanne trained in <a onclick="showPage('pawsb')">Paws.b</a> in 
                 The Centre for Mindfulness Research and Practice, Bangor 
-                University, Wales and is the first '<a onclick="showPage('pawsb')">Paws.b</a>' teacher in Ireland. 
-                She travels around Ireland teaching the '<a onclick="showPage('pawsb')">Paws.b</a>' mindfulness 
+                University, Wales and is the first <a onclick="showPage('pawsb')">Paws.b</a> teacher in Ireland. 
+                She travels around Ireland teaching the <a onclick="showPage('pawsb')">Paws.b</a> mindfulness 
                 programme in <b>schools</b>, <b>out-of-school services</b>, <b>youth clubs</b>, 
                 <b>sports clubs</b>, <b>camps</b> etc as well as also providing <b>private 
                     sessions</b>.
@@ -114,11 +119,11 @@
                 <li class="noselect">Cloughoge Primary School, Newry, Co. Down</li>
                 <li class="noselect">St Patrick’s Primary School, Donaghmore, Co. Tyrone</li>
             </ul>
-            <p class="centre">You can contact me <a onclick="showPage('contact')">here</a>.</p>
             <div class="spacer"></div>
             <div class="footer">&copy; Julieanne Reel 2017</div>
         </div>
 
+        <!-- Contact -->
         <div id="contact" class="container noselect">
             <h1>Contact Info</h1>
             
@@ -126,57 +131,118 @@
             <div class="footer">&copy; Julieanne Reel 2017</div>
         </div>
 
+        <!-- FAQ -->
         <div id="faq" class="container noselect">
             <h1>Frequently Asked Questions</h1>
+            
+            <div class="faq-title">How do I make an enquiry or book sessions?</div>
+            <div class="faq-answer">Go to the <b><a href="/contact" onclick="showPage('contact')">Contact Me</a> section</b> and I will get back to you as soon as possible.</div>
+            
+            <div class="faq-title">Is there any government funding available for my school/group to partake in your course?</div>
+            <div class="faq-answer">Google what is currently available as <b>funding is released from time to time</b>. Also contact your <b>Parent's Association</b>, local <b>Mental Health Association</b>, or organise <b>fundraising events</b>.</div>
+            
+            <div class="faq-title">Do you offer one-off taster sessions?</div>
+            <div class="faq-answer">It takes time to establish Mindfulness practice in the brain so therefore <b>I do not offer taster sessions</b>.  I do however offer <b>one hour introductory talks</b> on Mindfulness and the Paws.b Programme to teachers, staff and parent groups. These talks explain in more detail what Mindfulness is all about and gives the audience a chance to <b>experience a short practice</b>.</div>
+            
+            <div class="faq-title">Can you come to my school to train the teachers?</div>
+            <div class="faq-answer">I trained to teach a <b>specific programme to children</b>. However, when I teach in schools, I ask the class teacher and support staff to participate in each of my sessions. They will gain <b>theoretic knowledge</b>, <b>the correct attitude to attain a mindful classroom</b> and begin to build up <b>their own individual mindfulness practice</b>.  Neuro-science says it takes at least <b>8 weeks of practice</b> to establish mindfulness in the brain. But to make changes permanent the process is often referred to as “<b>use it or lose it</b>”. If you don’t keep firing the neurons repeatedly, the changes <b>do not last long</b>.  On completion of the Paws.b Programme, the class teacher will be <b>confident</b> in continuing the practice with the children but will not gain any teacher training qualifications.   </div>
             
             <div class="spacer"></div>
             <div class="footer">&copy; Julieanne Reel 2017</div>
         </div>
 
+        <!-- Paws.b -->
         <div id="pawsb" class="container noselect">
             <h1>What is Paws.b?</h1>
-            <p>Paws.b is a twelve session mindfulness course for primary schools, based on six themes, and ideally taught to 7 - 11 year olds. It is adapted from the .b mindfulness curriculum for secondary schools, as well as influenced by adult mindfulness courses such as MBSR & MBCT. It is currently being evaluated by the University of Bangor in the UK.</p>
+            <p>Paws.b is a <b>twelve session mindfulness course</b> for primary schools, based on six themes, and ideally taught to <b>7</b> to <b>11</b> year olds. It is adapted from the .b mindfulness curriculum for secondary schools, as well as influenced by adult mindfulness courses such as <b>MBSR</b> & <b>MBCT</b>. It is currently being evaluated by the <b>University of Bangor in the UK</b>.</p>
             <h1>What makes Paws.b distinctive?</h1>
-            <p>Paws.b was carefully crafted by classroom teachers and mindfulness experts to engage young children. It is taught with striking visuals, film clips and activities that bring mindfulness to life without losing the expertise and integrity of classic mindfulness teaching.</p>
+            <p>Paws.b was carefully crafted by classroom teachers and mindfulness experts to <b>engage</b> young children. It is taught with <b>striking visuals</b>, <b>film clips</b> and <b>activities</b> that bring mindfulness to life without losing the <b>expertise</b> and <b>integrity</b> of classic mindfulness teaching.</p>
             <h1>What are Paws.b's objectives?</h1>
-            <p>Paws.b aims to give students mindfulness as a life-skill. Students use it...</p>
+            <p>Paws.b aims to give students <b>mindfulness as a life-skill</b>. Students use it...</p>
             <ul>
-                <li>to feel happier, calmer and more fulfilled</li>
-                <li>to get on better with others</li>
-                <li>to help them concentrate and learn better</li>
-                <li>to help cope with stress and anxiety</li>
-                <li>to support performance such as music and sport</li>
+                <li>to feel <b>happier</b>, <b>calmer</b> and <b>more fulfilled</b></li>
+                <li>to <b>get on better</b> with others</li>
+                <li>to help them <b>concentrate</b> and <b>learn</b> better</li>
+                <li>to help <b>cope</b> with <b>stress</b> and <b>anxiety</b></li>
+                <li>to support <b>performance</b> such as <b>music</b> and <b>sport</b></li>
             </ul>
-            <hr>
-            <p>"I am pleased I have been taught mindfulness because I feel that it gives me more control in my life now and as I get older"</p>
-            <hr>
-            <p>"Mindfulness has helped my story-telling mind worrying about what will it be like? It has helped me be in the here and now, enjoy it and not worry about what might happen"</p>
-            <hr>
+            <h1>The Paws.b Curriculum</h1>
+            <p>The curriculum consists of <b>12</b> sessions based on <b>6</b> themes:</p>
+            <ul style="list-style: decimal;">
+                <li><b>Brain Training</b> – this is the neuro-scientific content where children learn about 4 main areas of the brain.  These are the areas that we know can be developed using mindfulness.</li>
+                <li><b>Puppy Training</b> - teaches the children how our mind is similar to a puppy: puppies wander off, don’t stay still and bring back things you didn’t ask for.  Our minds wander off, don’t stay focused, and bring us thoughts we didn’t ask for.  Rather than being critical, we accept that this is simply the nature of the mind.</li>
+                <li><b>Finding a Steady Place</b> – is about how we sometimes ‘wobble’ emotionally and what we can do to help ourselves.</li>
+                <li><b>Dealing with Difficulty</b> – teaches the children about the part of the brain that is responsible for our fight, flight, and freeze reaction.  It teaches how Mindfulness can help you in trigger moments, to pause and simply chose how you wish to respond, rather than reacting and regretting it later.</li>
+                <li><b>Story-Telling Mind</b> – teaches how it is our thoughts that actually control our mood and emotions, and how one thought can easily snowball into a big worry.  The children learn to observe their thoughts and practice techniques to settle and calm the mind.</li>
+                <li><b>Growing Happiness</b> – is about how we are in control of our own happiness. It teaches the importance of being kind to ourselves as well as others, and how kindness and gratitude are the magic mix for a happy life.</li>
+            </ul>
+            <div id="quote-container">
+                <div class="quote">"I was very worried about going to the dentist, so I practiced some 'Finger Breathing' and then I felt okay."</div>
+                <div class="quote">"I had to take a free kick and I was nervous, so I just took 3 deep breaths and I scored and we won the match"</div>
+                <div class="quote">"I love Mindfulness because it helps you to feel calm and to not worry so much"</div>
+            </div>
+            <div id="dot-container" class="noselect">
+                <span class="quote-dot" onclick="showQuote(0)"></span>
+                <span class="quote-dot" onclick="showQuote(1)"></span>
+                <span class="quote-dot" onclick="showQuote(2)"></span>
+            </div>
+            
             <div class="spacer"></div>
             <div class="footer">&copy; Julieanne Reel 2017</div>
         </div>
         
-        <script>
-            window.setInterval(function(){
-                var scroll = $(window).scrollTop();
-                var minScroll = 3025;
-                if(currentPage !== "home") {
-                    minScroll = 302.5;
-                }
-                if($(document).width() > minScroll) {
-                    if(scroll > 365) {
-                        $("#tabs").css('position', 'fixed').css('top', '0').css('left', '0').css('right', '0');
-                        $("#logo").css('margin-bottom', '2.5em');
-                    } else {
-                        $("#tabs").css('position', '').css('top', '').css('left', '').css('right', '');
-                        $("#logo").css('margin-bottom', '');
-                    }
-                } else {
-                    $("#tabs").css('position', '').css('top', '').css('left', '').css('right', '');
-                    $("#logo").css('margin-bottom', '');
-                }
-            }, 16);
-        </script>
+        <!-- Evidence -->
+        <div id="evidence" class="container noselect">
+            <h1>Evidence</h1>
+            <p>On completion of the Paws.b Mindfulness Programme with myself, I ask the participating children and teachers to fill out evaluation forms.  This allows me to collect and analyse information about the program's activities, characteristics, and outcomes. This is the combined results to-date.</p>
+  
+            <h2>Children's Evaluations</h2>
+            <p>
+                Has helped me
+                <span class="progress"><span class="bar" data-title="has_helped_me"></span></span>
+                Helps to calm me down when upset
+                <span class="progress"><span class="bar" data-title="helps_to_calm_me_down_when_upset"></span></span>
+                Helps me to avoid arguments
+                <span class="progress"><span class="bar" data-title="helps_me_to_avoid_arguments"></span></span>
+                Helps me to fall asleep at night
+                <span class="progress"><span class="bar" data-title="helps_me_to_fall_asleep_at_night"></span></span>
+                Helps me to make better choices
+                <span class="progress"><span class="bar" data-title="helps_me_to_make_better_choices"></span></span>
+                Helps me to focus better
+                <span class="progress"><span class="bar" data-title="helps_me_to_focus_better"></span></span>
+                Helps me to be more happy
+                <span class="progress"><span class="bar" data-title="helps_me_to_be_more_happy"></span></span>
+            </p>
 
+            <h2>Teacher Evaluations</h2>
+            <p>
+                Overall score for the Mindfulness Programme
+                <span class="progress"><span class="bar" data-title="overall_score_for_the_mindfulness_programme"></span></span>
+                Overall score for the facilitator
+                <span class="progress"><span class="bar" data-title="overall_score_for_the_facilitator"></span></span>
+                How many would book the programme again
+                <span class="progress"><span class="bar" data-title="how_many_would_book_the_programme_again"></span></span>
+            </p>
+            <h3>Changes that teachers noted in the children</h3>
+            <p>
+                Relating better towards one another
+                <span class="progress"><span class="bar" data-title="relating_better_towards_one_another"></span></span>
+                In their concentration
+                <span class="progress"><span class="bar" data-title="in_their_concentration"></span></span>
+                In their ability to settle themselves
+                <span class="progress"><span class="bar" data-title="in_their_ability_to_settle_themselves"></span></span>
+            </p>
+            
+            <p>There is also some great published research papers about the effects of Mindfulness training. Click <a href="https://doi.org/10.3389/fpsyg.2015.02025" onclick="window.open('https://doi.org/10.3389/fpsyg.2015.02025','_blank')">here</a> to read an article by Charlotte E. Vickery  from the School of Psychology, Bangor University, Bangor, UK and  Dusana Dorjee from the Centre for Mindfulness Research and Practice, School of Psychology, Bangor University, Bangor, UK.</p>
+        
+            <div class="spacer"></div>
+            <div class="footer">&copy; Julieanne Reel 2017</div>
+            
+        </div>
+        
+        <script>
+            showPage(location.href.match(/([^\/]*)\/*$/)[1]);
+        </script>
+        
     </body>
 </html>

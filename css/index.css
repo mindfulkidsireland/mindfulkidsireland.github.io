@@ -45,7 +45,7 @@ body {
 .tab {
     margin: 0 auto;
     min-width: 100px;
-    width: 9.6%;
+    width: 7%;
     font-weight: bold;
     color: #1292A5;
     text-align: center;
@@ -63,6 +63,12 @@ body {
 .tab:hover {
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.05);
+}
+
+.tab a {
+    padding: 16px;
+    color: #1292A5;
+    text-decoration: none;
 }
 
 .tab-active {
@@ -103,41 +109,45 @@ body {
     transition: 0.25s;
     z-index: 51;
     position: fixed;
-    width: 30em;
-    height: 7em;
-    background-color: #16B2CA;
-    color: #fff;
+    width: 40em;
+    height: 12em;
+    background-color: #fff;
+    color: #1292A5;
     border-radius: 0.2em;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
+svg path {
+    fill: #000;
+}
+
 @media only screen and (max-width: 768px) {
     #shop-message {
-        height: 8em;
+        height: 15em;
         top: 7.5em;
         width: 20em;
     }
 }
 
 #shop-message h1 {
+    margin-bottom: 0px;
     text-align: center;
-    font: 1.5em/normal sans-serif;
-    font-weight: bolder;
+    font: 3em/normal sans-serif;
+    font-weight: 900;
     font-family: 'Lora', serif;
-    text-transform: uppercase;
 }
 
 #shop-message p {
+    color: #000;
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    font-size: 1.25em;
-    margin: 10px;
+    font-size: 1.1em;
 }
 
 #close-shop-message-icon {
+    background: #1292A5;
+    -webkit-mask: url('../img/ic-close-white-24px.svg') center / contain no-repeat;
     cursor: pointer;
-    background-image: url('../img/ic-close-white-24px.svg');
-    opacity: 0.75;
     background-size: cover;
     position: absolute;
     top: 0.75em;
@@ -149,7 +159,7 @@ body {
 }
 
 #close-shop-message-icon:hover {
-    opacity: 1.0;
+    opacity: 0.75;
 }
 
 .container {
@@ -184,18 +194,49 @@ body {
     opacity: 0;
 }
 
-#pawsb hr {
-    margin-top: 2em;
-    margin-bottom: 2em;
-    border: 0;
-    background: -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 300, from(#1292A5), to(#fff));
-    height: 1px;
+#evidence {
+    transform: translate3d(400vw, 0, 0);
+    opacity: 0;
 }
 
-@media only screen and (max-width: 768px) {
-    #pawsb hr {
-        background: -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 150, from(#1292A5), to(#fff));
-    }
+.quote {
+    opacity: 0.7;
+    text-align: center;
+    font: 1.5em/normal serif;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.75em;
+    margin-bottom: 16px;
+}
+
+#quote-container {
+    margin: 0 auto;
+    max-width: 600px;
+    margin-top: 48px;
+}
+
+#dot-container {
+    text-align: center;
+}
+
+.quote-dot {
+    width: 0.75em;
+    height: 0.75em;
+    background-color: #ccc;
+    display: inline-block;
+    border-radius: 10em;
+    margin: 0.5em;
+    transition: 0.25s;
+}
+
+.quote-dot-active {
+    background-color: #999;
+}
+
+.quote-dot:hover {
+    background-color: #999;
+    cursor: pointer;
 }
 
 .spacer {
@@ -204,6 +245,7 @@ body {
 
 .centre {
     position: absolute;
+    bottom: 0;
     left: 0;
     right: 0;
     text-align: center;
@@ -214,6 +256,7 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
+    padding-bottom: 1em;
     text-align: center;
 }
 
@@ -224,9 +267,18 @@ body {
     color: #1292A5;
 }
 
+.container h2 {
+    margin-bottom: -0.4em;
+}
+
 .container p {
     font-family: 'Roboto', sans-serif;
     line-height: 1.75em;
+    font-size: 1.15em;
+}
+
+.container li {
+    font-family: 'Roboto', sans-serif;
     font-size: 1.15em;
 }
 
@@ -238,6 +290,42 @@ body {
     .container h1 {
         font-size: 1.25em;
     }
+    
+    .container li {
+        font-size: 0.9em;
+    }
+}
+
+.progress-bar {
+    width: 0%;
+    background-color: #1292A5;
+    text-align: center;
+    color: white; 
+    display: block;
+}
+
+.progress {
+    display: block;
+    background-color: #D1F4FA;
+    height: 24px;
+    text-align: center;
+}
+
+.bar {
+    transition: 1s;
+    color: #fff;
+    display: block;
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#1292A5), color-stop(100%,#1292A5));
+    height: 100%;
+    width: 0%;
+    line-height: 24px;
+    opacity: 0.8;
+}
+
+.progress-fill {
+    width: 50%;
+    background-color: #ccc;
+    display: inline;
 }
 
 .container .contact-link {
@@ -246,15 +334,22 @@ body {
 }
 
 .container b {
-    color: #1292A5;
+    background-color: #D1F4FA;
+    color: #000;
     font-weight: normal;
+    border-radius: 3px;
 }
 
 .container a {
-    color: #1292A5;
-    font-weight: normal;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-weight: bold;
     text-decoration: underline;
     cursor: pointer;
+}
+
+.container a {
+    color: #000;
 }
 
 .noselect {
@@ -268,13 +363,13 @@ body {
 }
 
 #schools {
-    display: grid;
-    grid-template-columns: minmax(250px, 33.33%) minmax(250px, 33.33%) minmax(250px, 33.33%);
-    padding-top: 0.5em;
-    padding-bottom: 1em;
+    padding: 0;
+    padding-top: 10px;
+    column-count: 3;
 }
 
 #schools li {
+    break-inside: avoid;
     display: block;
     width: 200px;
     float: left;
@@ -295,23 +390,17 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
- 
+    
     #schools {
-        grid-template-columns: 33.33% 33.33% 33.33%;
         padding: 0;
+        padding-top: 10px;
+        column-count: 2;
     }
     
     #schools li {
-        font-size: 0.2em;
-        display: block;
         width: 80%;
-        float: left;
-        margin: 0.5em;
-        box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.2);
-        border-radius: 0.2em;
-        font-style: italic;
+        margin-left: -0.5em;
     }
-    
 }
 
 .photo-right {
@@ -344,6 +433,34 @@ body {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         padding: 0px;
         margin: 1em 1em;
+    }
+    
+}
+
+.faq-title {
+    font-family: 'Lora', serif;
+    font-weight: 900;
+    font-size: 1.6em;
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.faq-answer {
+    opacity: 0.75;
+    font-size: 1.1em;
+    line-height: 1.4em;
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .faq-title {
+        font-family: 'Lora', serif;
+        font-weight: 900;
+        font-size: 1.2em;
+        text-align: center;
+        margin-top: 40px;
+        padding: 20px;
     }
     
 }
