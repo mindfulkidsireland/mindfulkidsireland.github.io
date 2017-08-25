@@ -6,7 +6,7 @@ var videoFrames = [
     "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/nbr608ryTNw\" frameborder=\"0\" allowfullscreen></iframe>",
     "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/5jYuY82ckWo\" frameborder=\"0\" allowfullscreen></iframe>",
     "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/msWXmI0jQUo\" frameborder=\"0\" allowfullscreen></iframe>",
-    "<iframe src=\"https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fmindfulkidsireland%2Fvideos%2F1342071602503316%2F&show_text=0&width=560\" width=\"560\" height=\"315\" style=\"border:none;overflow:hidden\" scrolling=\"no\" frameborder=\"0\" allowTransparency=\"true\" allowFullScreen=\"true\"></iframe>"
+    "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/fG7sJd5FtHI\" frameborder=\"0\" allowfullscreen></iframe>"
 ];
 
 window.onload = function() {
@@ -209,8 +209,7 @@ function showPage(page) {
         } else {
             window.history.pushState("", "", "/" + currentPage);
         }
-    
-    
+        
 }
 
 function hideShopMessage() {
