@@ -204,11 +204,14 @@ function showPage(page) {
             break;
     }
     
-    if(currentPage === "home") {
-        window.history.pushState("", "", ".");
-    } else {
-        window.history.pushState("", "", currentPage);
+    if(location.href.match(/([^\/]*)\/*$/).length <= 2) {
+        if(currentPage === "home") {
+            window.history.pushState("", "", ".");
+        } else {
+            window.history.pushState("", "", currentPage);
+        }
     }
+    
     
 }
 
