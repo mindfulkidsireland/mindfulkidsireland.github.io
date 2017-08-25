@@ -207,7 +207,7 @@ function showPage(page) {
     if(currentPage === "home") {
         window.history.pushState("", "", ".");
     } else {
-        window.history.pushState("", "", "" + currentPage);
+        window.history.pushState("", "", currentPage);
     }
     
 }
