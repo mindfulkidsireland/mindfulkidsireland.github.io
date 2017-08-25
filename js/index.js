@@ -204,7 +204,9 @@ function showPage(page) {
             break;
     }
     
-    if(location.href.match(/([^\/]*)\/*$/).length <= 2) {
+    if(location.href.match(/([^\/]*)\/*$/)[1] !== "faq" || location.href.match(/([^\/]*)\/*$/)[1] !== "evidence"
+            || location.href.match(/([^\/]*)\/*$/)[1] !== "pawsb" || location.href.match(/([^\/]*)\/*$/)[1] !== "contact"
+            || location.href.match(/([^\/]*)\/*$/)[1] !== "shop") {
         if(currentPage === "home") {
             window.history.pushState("", "", ".");
         } else {
