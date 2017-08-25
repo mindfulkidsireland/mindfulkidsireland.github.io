@@ -203,6 +203,13 @@ function showPage(page) {
         default:
             break;
     }
+    
+    if(currentPage === "home") {
+        window.history.pushState("", "", ".");
+    } else {
+        window.history.pushState("", "", "" + currentPage);
+    }
+    
 }
 
 function hideShopMessage() {
