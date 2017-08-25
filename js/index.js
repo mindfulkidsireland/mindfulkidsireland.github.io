@@ -58,6 +58,11 @@ function showVideo(video) {
         $(this).removeClass("active");
     });
     $(".video-thumbnail:eq(" + video + ")").toggleClass("active");
+    
+    $('#video-active').ready(function(){
+        $('#video-active').contents().find('body').html('Hey, i`ve changed content of <body>! Yay!!!');
+    });
+    
 }
 
 function showQuote(quote) {
