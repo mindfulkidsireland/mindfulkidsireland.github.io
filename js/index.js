@@ -95,12 +95,14 @@ function showPage(page) {
             $('.tab:eq(3)').removeClass('tab-active');
             $('.tab:eq(4)').removeClass('tab-active');
             $('.tab:eq(5)').removeClass('tab-active');
+            $('.tab:eq(6)').removeClass('tab-active');
             
             $('#home').css('transform', 'translate3d(0, 0, 0)').css('opacity', '1').removeClass("noselect");
             $('#contact').css('transform', 'translate3d(100vw, 0, 0)').css('opacity', '0').addClass("noselect");
             $('#faq').css('transform', 'translate3d(200vw, 0, 0)').css('opacity', '0').addClass("noselect");
             $('#pawsb').css('transform', 'translate3d(300vw, 0, 0)').css('opacity', '0').addClass("noselect");
             $('#evidence').css('transform', 'translate3d(400vw, 0, 0)').css('opacity', '0').addClass("noselect");
+            $('#clients').css('transform', 'translate3d(500vw, 0, 0)').css('opacity', '0').addClass("noselect");
             
             break;
             
@@ -113,12 +115,14 @@ function showPage(page) {
             $('.tab:eq(3)').removeClass('tab-active');
             $('.tab:eq(4)').removeClass('tab-active');
             $('.tab:eq(5)').removeClass('tab-active');
+            $('.tab:eq(6)').removeClass('tab-active');
             
             $('#home').css('transform', 'translate3d(-100vw, 0, 0)').css('opacity', '0').addClass("noselect");
             $('#contact').css('transform', 'translate3d(0, 0, 0)').css('opacity', '1').removeClass("noselect");
             $('#faq').css('transform', 'translate3d(100vw, 0, 0)').css('opacity', '0').addClass("noselect");
             $('#pawsb').css('transform', 'translate3d(200vw, 0, 0)').css('opacity', '0').addClass("noselect");
             $('#evidence').css('transform', 'translate3d(300vw, 0, 0)').css('opacity', '0').addClass("noselect");
+            $('#clients').css('transform', 'translate3d(400vw, 0, 0)').css('opacity', '0').addClass("noselect");
             
             break;
             
@@ -131,12 +135,14 @@ function showPage(page) {
             $('.tab:eq(3)').removeClass('tab-active');
             $('.tab:eq(4)').removeClass('tab-active');
             $('.tab:eq(5)').removeClass('tab-active');
+            $('.tab:eq(6)').removeClass('tab-active');
             
             $('#home').css('transform', 'translate3d(-200vw, 0, 0)').css('opacity', '0').addClass("noselect");
             $('#contact').css('transform', 'translate3d(-100vw, 0, 0)').css('opacity', '0').addClass("noselect");
             $('#faq').css('transform', 'translate3d(0, 0, 0)').css('opacity', '1').removeClass("noselect");
             $('#pawsb').css('transform', 'translate3d(100vw, 0, 0)').css('opacity', '0').addClass("noselect");
             $('#evidence').css('transform', 'translate3d(200vw, 0, 0)').css('opacity', '0').addClass("noselect");
+            $('#clients').css('transform', 'translate3d(300vw, 0, 0)').css('opacity', '0').addClass("noselect");
             
             break;
             
@@ -149,12 +155,14 @@ function showPage(page) {
             $('.tab:eq(3)').addClass('tab-active');
             $('.tab:eq(4)').removeClass('tab-active');
             $('.tab:eq(5)').removeClass('tab-active');
+            $('.tab:eq(6)').removeClass('tab-active');
             
             $('#home').css('transform', 'translate3d(-300vw, 0, 0)').css('opacity', '0').addClass("noselect");
             $('#contact').css('transform', 'translate3d(-200vw, 0, 0)').css('opacity', '0').addClass("noselect");
             $('#faq').css('transform', 'translate3d(-100vw, 0, 0)').css('opacity', '0').addClass("noselect");
             $('#pawsb').css('transform', 'translate3d(0, 0, 0)').css('opacity', '1').removeClass("noselect");
             $('#evidence').css('transform', 'translate3d(100vw, 0, 0)').css('opacity', '0').addClass("noselect");
+            $('#clients').css('transform', 'translate3d(200vw, 0, 0)').css('opacity', '0').addClass("noselect");
             
             break;
             
@@ -176,17 +184,36 @@ function showPage(page) {
             $('.tab:eq(3)').removeClass('tab-active');
             $('.tab:eq(4)').addClass('tab-active');
             $('.tab:eq(5)').removeClass('tab-active');
+            $('.tab:eq(6)').removeClass('tab-active');
             
             $('#home').css('transform', 'translate3d(-400vw, 0, 0)').css('opacity', '0').addClass("noselect");
             $('#contact').css('transform', 'translate3d(-300vw, 0, 0)').css('opacity', '0').addClass("noselect");
             $('#faq').css('transform', 'translate3d(-200vw, 0, 0)').css('opacity', '0').addClass("noselect");
             $('#pawsb').css('transform', 'translate3d(-100vw, 0, 0)').css('opacity', '0').addClass("noselect");
             $('#evidence').css('transform', 'translate3d(0, 0, 0)').css('opacity', '1').removeClass("noselect");
-            
-            
+            $('#clients').css('transform', 'translate3d(100vw, 0, 0)').css('opacity', '0').addClass("noselect");
             
             break;
+          
+        case "clients":
             
+            $('.tab:eq(0)').removeClass('tab-active');
+            $('.tab:eq(1)').removeClass('tab-active');
+            $('.tab:eq(2)').removeClass('tab-active');
+            $('.tab:eq(3)').removeClass('tab-active');
+            $('.tab:eq(4)').removeClass('tab-active');
+            $('.tab:eq(5)').addClass('tab-active');
+            $('.tab:eq(6)').removeClass('tab-active');
+            
+            $('#home').css('transform', 'translate3d(-500vw, 0, 0)').css('opacity', '0').addClass("noselect");
+            $('#contact').css('transform', 'translate3d(-400vw, 0, 0)').css('opacity', '0').addClass("noselect");
+            $('#faq').css('transform', 'translate3d(-300vw, 0, 0)').css('opacity', '0').addClass("noselect");
+            $('#pawsb').css('transform', 'translate3d(-200vw, 0, 0)').css('opacity', '0').addClass("noselect");
+            $('#evidence').css('transform', 'translate3d(-100vw, 0, 0)').css('opacity', '0').addClass("noselect");
+            $('#clients').css('transform', 'translate3d(0, 0, 0)').css('opacity', '1').removeClass("noselect");
+            
+            break;
+        
         case "shop":
             $('#dim-window').css('opacity', '0.33').css('pointer-events', 'auto');
             $('#shop-message').css('transform', 'none');
@@ -196,7 +223,8 @@ function showPage(page) {
             $('.tab:eq(2)').removeClass('tab-active');
             $('.tab:eq(3)').removeClass('tab-active');
             $('.tab:eq(4)').removeClass('tab-active');
-            $('.tab:eq(5)').addClass('tab-active');
+            $('.tab:eq(5)').removeClass('tab-active');
+            $('.tab:eq(6)').addClass('tab-active');
             
             break;
             
@@ -205,9 +233,9 @@ function showPage(page) {
     }
     
         if(currentPage === "home") {
-            window.history.pushState("", "", ".");
+            window.history.replaceState("", "", ".");
         } else {
-            window.history.pushState("", "", "/" + currentPage);
+            window.history.replaceState("", "", "/" + currentPage);
         }
         
 }
