@@ -197,6 +197,8 @@ function showPage(page) {
           
         case "clients":
             
+            currentPage = page;
+            
             $('.tab:eq(0)').removeClass('tab-active');
             $('.tab:eq(1)').removeClass('tab-active');
             $('.tab:eq(2)').removeClass('tab-active');
